@@ -1,0 +1,256 @@
+#styleBox, #weddingCard {
+    border: none;
+}
+
+#weddingCard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 700px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-image: url('https://thumbs.dreamstime.com/b/abstract-curve-illustration-background-frame-structure-40690385.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.05) 100%
+        );
+        pointer-events: none;
+    }
+}
+
+.textBox {
+    position: absolute;
+    cursor: move;
+    border: none;
+    background-color: transparent;
+}
+
+#styleBox {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.input-group {
+    margin-bottom: 28px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.input-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    outline: none;
+}
+
+.input-group:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#color, #font, #size {
+    margin-bottom: 15px;
+    size: 20px;
+}
+
+
+
+#styleBox input[type="color"],
+#styleBox select,
+#styleBox input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#styleBox input[type="color"] {
+    height: 40px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#styleBox input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#styleBox input[type="number"]::-webkit-outer-spin-button,
+#styleBox input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#header {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+#header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+#addTextBox {
+  background-color: #6366f1;
+  background-image: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  height: 46px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  margin: 0;
+  outline: none;
+  padding: 10px 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#addTextBox:hover,
+#addTextBox:focus {
+  background-image: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+  transform: translateY(-2px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#addTextBox:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+#undo {
+    position: fixed;
+    bottom: 30px;
+    right: calc(50% + 10px);
+    background-color: #3d5afe;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 44px;
+    width: 100px;
+    line-height: 20px;
+    margin: 0;
+    padding: 10px 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#redo {
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% + 10px);
+    background-color: #3d5afe;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 44px;
+    width: 100px;
+    line-height: 20px;
+    margin: 0;
+    padding: 10px 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#undo:hover, #redo:hover {
+    background-color: #304ffe;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
